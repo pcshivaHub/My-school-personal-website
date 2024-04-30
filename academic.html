@@ -1,0 +1,46 @@
+<html>
+<head>
+    <style>
+        #bg {
+            background: black;
+            font-family: cursive;
+                }
+
+        h1:hover {
+            text-decoration: overline; 
+        }
+
+        img {
+            width: 50%; 
+            height: auto;
+        }
+        #b{
+            color: azure;
+        }
+    </style>
+    <script>
+        function changeColor() {
+            var text = document.getElementById("myText");
+            var Text = document.getElementById("mytext");
+            var TEXT = document.getElementById("myTExt");
+            var colors = ["aqua", "blue", "green"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            text.style.color = randomColor;
+            Text.style.color = randomColor;
+            TEXT.style.color = randomColor;
+        }
+    </script>
+</head>
+<body id="bg"> 
+    <center>
+        <h1 id="b">I have some achievements</h1>
+    </center>
+    <h2 id="myText">I get decent marks in maths.</h2>
+    <h2 id="mytext">I got a silver in a computer science olympiad.</h2>
+    <h2 id="myTExt">I have a certificate in AMC.</h2>
+    <h2 id="b">I have a trophy in Table Tennis. It is a trophy for doubles.</h2>
+    <button onclick="changeColor()">Click me to know more</button>
+    <button onclick="window.location.href='Mypersonweb.html'">home</button>
+    <img src="New Project.jpg" alt="">
+</body>
+</html>
